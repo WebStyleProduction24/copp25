@@ -1,0 +1,125 @@
+:root {
+  --padding-menu: 30px;
+}
+
+* {
+/*  margin: 0;*/
+}
+
+img {
+/*  width: 300px;*/
+  height: calc(100vh - 400px);
+  padding: 0 30px 30px 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: arial;
+}
+
+header {
+  height: 100px;
+  background-color: #ff5733;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #336bff;
+  min-height: calc(100vh - 200px);
+/*  border: 4px solid #000;*/
+  padding: 10px;
+/*  margin: 15px;*/
+}
+
+footer {
+  background-color: #fff633;
+  height: 100px;
+}
+
+p {
+  line-height: 1.5;
+  width: 25%;
+}
+
+.image-1 {
+  float: left;
+}
+
+.image-2 {
+  float: right;
+  padding: 30px 0 30px 30px;
+
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+.menu-main, .submenu-main li {
+  position: relative;
+}
+
+.menu-main {
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.menu-main li:hover {
+  background-color: #8f1818;
+}
+.menu-main a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  display: block;
+}
+
+.menu-main li, .menu-main a {
+  transition: .5s;  
+}
+
+.menu-main li:hover a {
+  color: #000;
+}
+.submenu-main {
+  display: none;
+  padding: 0;
+  margin-top: 5px;
+}
+.submenu-main li {
+  padding: 5px 0;
+}
+
+.submenu-main li a {
+  padding: 5px 30px;
+}
+.submenu-main li a:hover {
+  background-color: #666;
+}
+
+.menu-main li:hover .submenu-main {
+  display: block;
+}
+
+.submenu-main li:hover .submenu-third-main {
+  display: block;
+}
+
+.menu-main, .submenu-main {
+  list-style: none;  
+}
+
+.submenu-third-main {
+  display: none;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  background-color: ;
+  background-color: #8f1818;
+  padding: 0;
+  list-style: none;
+}
